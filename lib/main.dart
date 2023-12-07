@@ -43,13 +43,13 @@ class _NavigationExampleState extends State<NavigationExample> {
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Badge(child: Icon(Icons.notifications_sharp)),
+            icon: Badge(child: Icon(Icons.nordic_walking)),
             label: 'Routes',
           ),
           NavigationDestination(
             icon: Badge(
-              label: Text('2'),
-              child: Icon(Icons.messenger_sharp),
+              //label: Text('2'),
+              child: Icon(Icons.notifications),
             ),
             label: 'Messages',
           ),
@@ -77,22 +77,29 @@ class _NavigationExampleState extends State<NavigationExample> {
             children: <Widget>[
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.notifications_sharp),
+                  leading: Icon(Icons.nordic_walking),
                   title: Text('Route 1'),
                   subtitle: Text('This is a route'),
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.notifications_sharp),
+                  leading: Icon(Icons.nordic_walking),
                   title: Text('Route 2'),
                   subtitle: Text('This is a route'),
                 ),
               ),
               Card(
                 child: ListTile(
-                  leading: Icon(Icons.notifications_sharp),
+                  leading: Icon(Icons.nordic_walking),
                   title: Text('Route 3'),
+                  subtitle: Text('This is a route'),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.nordic_walking),
+                  title: Text('Route 4'),
                   subtitle: Text('This is a route'),
                 ),
               ),
