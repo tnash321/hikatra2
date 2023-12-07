@@ -1,6 +1,6 @@
 {
-    "name": "skeleton_example",
-    "short_name": "skeleton_example",
+    "name": "hikatra",
+    "short_name": "hikatra",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
