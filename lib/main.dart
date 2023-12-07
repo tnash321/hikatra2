@@ -40,23 +40,28 @@ class _NavigationExampleState extends State<NavigationExample> {
           NavigationDestination(
             selectedIcon: Icon(Icons.home),
             icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            label: 'Homepage',
           ),
           NavigationDestination(
             icon: Badge(child: Icon(Icons.nordic_walking)),
-            label: 'Routes',
+            label: 'Profile',
           ),
           NavigationDestination(
             icon: Badge(
               //label: Text('2'),
               child: Icon(Icons.notifications),
             ),
-            label: 'Messages',
+            label: 'Map',
+          ),
+           NavigationDestination(
+            icon: Badge(child: Icon(Icons.add_a_photo),
+            ),
+            label: 'Photo Gallery',
           ),
         ],
       ),
       body: <Widget>[
-        /// Home page
+        /// Homepage
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
@@ -70,7 +75,23 @@ class _NavigationExampleState extends State<NavigationExample> {
           ),
         ),
 
-        /// Routes page
+
+        //profile page
+        Card(
+          shadowColor: Colors.transparent,
+          margin: const EdgeInsets.all(8.0),
+          child: SizedBox.expand(
+            child: Center(
+              child: Text(
+                'Profile page',
+                style: theme.textTheme.titleLarge,
+              ),
+            ),
+          ),
+        ),
+
+
+        /// Map page
         const Padding(
           padding: EdgeInsets.all(8.0),
           child: Column(
