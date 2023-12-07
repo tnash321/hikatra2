@@ -53,8 +53,9 @@ class _NavigationExampleState extends State<NavigationExample> {
             ),
             label: 'Map',
           ),
-           NavigationDestination(
-            icon: Badge(child: Icon(Icons.add_a_photo),
+          NavigationDestination(
+            icon: Badge(
+              child: Icon(Icons.add_a_photo),
             ),
             label: 'Photo Gallery',
           ),
@@ -75,21 +76,36 @@ class _NavigationExampleState extends State<NavigationExample> {
           ),
         ),
 
-
         //profile page
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
           child: SizedBox.expand(
             child: Center(
-              child: Text(
-                'Profile page',
-                style: theme.textTheme.titleLarge,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'Profile page',
+                    style: theme.textTheme.displayLarge,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    'This is where your personal settings should go',
+                    style: theme.textTheme.bodyMedium,
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    'This is also where personal preferences should go',
+                    style: theme.textTheme.bodyMedium,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
               ),
             ),
           ),
         ),
-
 
         /// Map page
         const Padding(
