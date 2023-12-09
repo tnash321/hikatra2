@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  form_floating_action_button:
+    dependency: "direct main"
+    description:
+      name: form_floating_action_button
+      sha256: bb21f380a2613f5f27c02fe3c80bbd1189017c142deecbf738f715bb8d89d468
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.1"
   lints:
     dependency: transitive
     description:

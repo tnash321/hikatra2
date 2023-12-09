@@ -63,14 +63,32 @@ class _NavigationExampleState extends State<NavigationExample> {
       ),
       body: <Widget>[
         /// Homepage
-        Card(
+      Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
           child: SizedBox.expand(
             child: Center(
-              child: Text(
-                'Home page',
-                style: theme.textTheme.titleLarge,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                      'Home page',
+                        style: theme.textTheme.titleLarge,
+                  ),
+                  const SizedBox(height: 30),
+                  TextButton(
+                    style: TextButton.styleFrom(foregroundColor: Colors.blue),
+                    onPressed: null,
+                    child: const Text('Most Visited'),
+                  ),
+                  const SizedBox(height: 15),
+                  TextButton(
+                    style: TextButton.styleFrom(foregroundColor: Colors.blue),
+                    onPressed: null,
+                    child: const Text('Highest Rated'),
+                  ),
+                ],
               ),
             ),
           ),
