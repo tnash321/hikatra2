@@ -43,13 +43,13 @@ class _NavigationExampleState extends State<NavigationExample> {
             label: 'Homepage',
           ),
           NavigationDestination(
-            icon: Badge(child: Icon(Icons.nordic_walking)),
+            icon: Badge(child: Icon(Icons.tag_faces)),
             label: 'Profile',
           ),
           NavigationDestination(
             icon: Badge(
               //label: Text('2'),
-              child: Icon(Icons.notifications),
+              child: Icon(Icons.map_outlined),
             ),
             label: 'Map',
           ),
