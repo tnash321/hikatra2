@@ -34,7 +34,7 @@ class _NavigationExampleState extends State<NavigationExample> {
             currentPageIndex = index;
           });
         },
-        indicatorColor: Colors.amber,
+        indicatorColor: Colors.green,
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
@@ -144,7 +144,8 @@ class _NavigationExampleState extends State<NavigationExample> {
           ),
         ),
 
-        /// Messages page
+        /// Photo page
+        /*
         ListView.builder(
           reverse: true,
           itemCount: 2,
@@ -184,7 +185,23 @@ class _NavigationExampleState extends State<NavigationExample> {
               ),
             );
           },
+        ),*/
+
+        const Column(
+          children: [
+            Image(
+              image: NetworkImage('https://media.istockphoto.com/id/1141196125/photo/hiking-in-the-allgaeu-alps.jpg?s=612x612&w=0&k=20&c=scBnm6PxD4eJm49IKmP-EJiarbI_lds_z5QCWgViqTo='),
+            ),
+            Image(
+              image: NetworkImage('https://media.istockphoto.com/id/1189969126/photo/group-of-hikers-walks-in-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=YlJOZLmELRF0HaEr1Xv4-Uae_VN4vnB8XnE99hGD3gQ='),
+            ),
+            Image(
+              image: NetworkImage('https://www.ruidosonews.com/gcdn/presto/2018/08/21/PNM8/0f2772dd-aa08-42c2-93f4-e5c7b7e6737e-RichAnnaDozier.jpg?crop=2893,1627,x0,y166&width=2893&height=1627&format=pjpg&auto=webp'),
+            ),
+          ],
         ),
+
+
       ][currentPageIndex],
     );
   }
