@@ -104,6 +104,9 @@ class _NavigationExampleState extends State<NavigationExample> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  const Image(
+                    image: NetworkImage('https://freerangestock.com/sample/120140/business-man-profile-vector.jpg'),
+                  ),
                   Text(
                     'Profile page',
                     style: theme.textTheme.displayLarge,
