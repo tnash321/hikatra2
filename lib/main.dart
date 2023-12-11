@@ -72,6 +72,9 @@ class _NavigationExampleState extends State<NavigationExample> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  const Image(
+                    image: NetworkImage('https://media.istockphoto.com/id/1369171053/photo/group-of-sporty-people-walks-in-mountains-at-sunset-with-backpacks.jpg?s=612x612&w=0&k=20&c=ajQuWt2YRWd0FPaCpdKz2Tt3WX2NI1ddeZjf8HIxlwU='),
+                  ),
                   Text(
                       'Home page',
                         style: theme.textTheme.titleLarge,
